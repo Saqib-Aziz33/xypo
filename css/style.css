@@ -1,0 +1,141 @@
+:root{
+    --clr-pink: #f67c92;
+    --clr-pink-shahdow: rgba(246, 124, 146, 0.2);
+}
+/* utilities */
+.btn-outline-pink{
+    border: 2px solid var(--clr-pink);
+    font-weight: bold;
+}
+.btn-outline-pink:hover{
+    background-color: var(--clr-pink);
+}
+.btn-outline-pink:focus{
+    box-shadow: 0 0 0 .25rem var(--clr-pink-shahdow);
+}
+.my-5{
+    margin: 6rem 0 !important;
+}
+
+
+/* header */
+#header{
+    height: 100vh;
+    background: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+}
+.logo{
+    width: 100px;
+}
+.square{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    background-color: var(--clr-pink);
+}
+.header-text{
+    max-width: 400px;
+}
+.line-1{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: var(--clr-pink);
+}
+.line-2{
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background-color: var(--clr-pink);
+}
+.line-3{
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: var(--clr-pink);
+}
+.lines{
+    line-height: 8px;
+}
+
+
+
+/* navbar */
+#side-nav{
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    z-index: 2;
+    right: -250px; 
+    top: 0;
+    background: var(--clr-pink);
+    transition: all 0.3s ease;
+    min-height: 500px;
+}
+#side-nav.show-nav{
+    right: 0px; 
+}
+#nav-toggler-btn{
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+}
+#nav-toggler-btn img{
+    width: 50px;
+}
+#nav-toggler-btn:focus{
+    box-shadow: none;
+}
+
+
+
+
+/* features */
+#features img{
+    width: 100px;
+}
+
+
+
+/* contact */
+.form-control-pink{
+    border: none;
+    outline: none;
+    border: 2px solid var(--clr-pink);
+}
+.form-control-pink:focus{
+    box-shadow: 0 0 0 .25rem var(--clr-pink-shahdow);
+    outline: none;
+    border-color: var(--clr-pink);
+}
+
+
+
+/* footer */
+.footer-hr{
+    background-color: var(--clr-pink);
+    border-top: 2px solid var(--clr-pink);
+}
+
+
+/* social icons */
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition: all 1s ease;
+    
+}
+
+.social-icons img{
+    display: block;
+    width: 25px;
+    margin: 20px 5px;
+    cursor: pointer;
+}
