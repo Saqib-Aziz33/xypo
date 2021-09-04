@@ -70,17 +70,17 @@
     z-index: 2;
     right: -250px; 
     top: 0;
+    overflow: auto;
     background: var(--clr-pink);
     transition: all 0.3s ease;
-    min-height: 500px;
 }
 #side-nav.show-nav{
     right: 0px; 
 }
 #nav-toggler-btn{
     position: fixed;
-    right: 65px;
-    top: 35px;
+    right: 30px;
+    top: 25px;
     z-index: 2;
 }
 #nav-toggler-btn img{
@@ -89,7 +89,9 @@
 #nav-toggler-btn:focus{
     box-shadow: none;
 }
-
+.bg-white-50{
+    background-color: rgba(255, 255, 255, 0.5);
+}
 
 
 
